@@ -1,0 +1,78 @@
+@mixin BG {
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.BG1 {
+    background-image: url('/assets/img/BG.svg');
+    background-color: #272937;
+    @include BG;
+}
+
+.BG2 {
+    background-image: url('/assets/img/BG2.svg');
+    background-color: #222432;
+    @include BG;
+
+}
+
+.BG3 {
+    background-image: url('/assets/img/BG3.svg');
+    background-color: #1D1F2D;
+    @include BG;
+}
+
+.BG4 {
+    background-image: url('/assets/img/BG4.svg');
+    background-color: #040614;
+    @include BG;
+}
+
+.BG5 {
+    background-image: url('/assets/img/BG5.svg');
+    background-color: #00010F;
+    @include BG;
+}
+
+.BG6 {
+    background-color: #00010F;
+    @include BG;
+}
+
+.BG7 {
+    background-image: url('/assets/img/BG7.svg');
+    background-color: #181A28;
+    @include BG;
+}
+
+.BG8 {
+    background-image: url('/assets/img/BG8.svg');
+    background-color: #00010F;
+    @include BG;
+}
+
+.BG9 {
+    background-image: url('/assets/img/BG9.png');
+    background-color: #131523;
+    @include BG;
+}
+
+.BG10 {
+    background-image: url('/assets/img/BG10.png');
+    background-color: #090B19;
+    @include BG;
+    overflow: hidden;
+}
+
+.BG11 {
+    background-image: url('/assets/img/BG11.svg');
+    background-color: #00010F;
+    @include BG;
+}
+
+.BG12 {
+    background-image: url('/assets/img/BG12.svg');
+    background-color: #0e101e;
+    @include BG;
+}

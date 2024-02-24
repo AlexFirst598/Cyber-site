@@ -1,0 +1,24 @@
+.about {
+    background-image: url('/assets/img/about_img.png');
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-top: 245px;
+    padding-bottom: 307px;
+
+    &__wrapper {}
+
+    &__group {
+        max-width: 425px;
+        margin-left: auto;
+    }
+
+    &__title {
+        margin-bottom: 15px;
+    }
+
+    &__text {
+        margin-bottom: 35px;
+    }
+
+    &__btn {}
+}

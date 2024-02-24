@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Киберспортивная-платформа</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;600;700&family=Roboto:wght@400;500;700&family=Teko:wght@300;400&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="BG1">
+  <div id="register" class="modal">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <div class="modal__header">
+          <h3 class="modal__title">Войти с помощью сервисов:</h3>
+          <ul class="modal__links">
+            <li class="modal__link"><a href="#" target="_blank"><img src="assets/img/icons/DS.svg"></a></li>
+            <li class="modal__link"><a href="#" target="_blank"><img src="assets/img/icons/GGL.svg"></a></li>
+            <li class="modal__link"><a href="#" target="_blank"><img src="assets/img/icons/VK.svg"></a></li>
+            <li class="modal__link"><a href="#" target="_blank"><img src="assets/img/icons/STM.svg"></a></li>
+          </ul>
+          <p class="modal__text">Или</p>
+          <a href="#close" title="Close" class="modal__close"></a>
+        </div>
+        <div class="modal__body">
+          <form action="" class="modal__form">
+            <div class="modal__inputs">
+              <label class="modal__label"><input type="text" required class="modal__input"><span>Никнейм</span></label>
+              <label class="modal__label"><input type="email" required class="modal__input"><span>Электронная
+                  почта</span></label>
+              <label class="modal__label"><input type="password" required class="modal__input"><span>Пароль</span></label>
+              <label class="modal__label"><input type="password" required class="modal__input"><span>Повтор пароля</span></label>
+            </div>
+            <div class="modal__checkbox">
+              <input type="checkbox" id="checkbox" required>
+              <label for="checkbox">Я согласен с <a href="">правилами пользования</a> и<br> <a href="">политикой
+                  конфиденциальности</a></label>
+            </div>
+            <button class="modal__btn btn">Зарегистрироваться</button>
+          </form>
+          <p class="modal__signin">Есть аккаунт?<a href="#" id="enter">Войти</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="login" class="modal">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <div class="modal__header">
+          <h3 class="modal__title">Войти с помощью сервисов:</h3>
+          <ul class="modal__links">
+            <li class="modal__link"><a href="#" target="_blank"><img src="assets/img/icons/DS.svg"></a></li>
+            <li class="modal__link"><a href="#" target="_blank"><img src="assets/img/icons/GGL.svg"></a></li>
+            <li class="modal__link"><a href="#" target="_blank"><img src="assets/img/icons/VK.svg"></a></li>
+            <li class="modal__link"><a href="#" target="_blank"><img src="assets/img/icons/STM.svg"></a></li>
+          </ul>
+          <p class="modal__text">Или</p>
+          <a href="#close" title="Close" class="modal__close"></a>
+        </div>
+        <div class="modal__body">
+          <form action="" class="modal__form">
+            <div class="modal__inputs modal__inputs--fogot">
+              <label class="modal__label"><input type="email" class="modal__input"
+                  placeholder="example@gmail.com" required><span>Электронная
+                  почта</span></label>
+              <label class="modal__label"><input type="password" class="modal__input" placeholder="Пароль" ></label>
+              <a class="modal__fogot" href="#">Забыли пароль?</a>
+            </div>
+            <div class="modal__checkbox">
+              <input type="checkbox" id="checkbox-two">
+              <label for="checkbox-two">Чужой компьютер</label>
+            </div>
+            <button class="modal__btn btn">Войти</button>
+          </form>
+          <p class="modal__signin">Нет аккаунта?<a href="#" id="create">Создать</a></p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="fogot-post" class="modal">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <div class="modal__header">
+          <div class="modal__width">
+            <h3 class="modal__title">Сброс пароля</h3>
+            <p class="modal__descr text">Введите адрес электронной почты связанный с вашим аккаунтом</p>
+          </div>
+          <a href="#close" title="Close" class="modal__close"></a>
+        </div>
+        <div class="modal__body">
+          <form action="" class="modal__form">
+            <div class="modal__inputs">
+              <label class="modal__label modal__label--width"><input type="email" class="modal__input"
+                  placeholder="Электронная почта" required></label>
+            </div>
+            <button class="modal__btn modal__btn--width btn">Продолжить</button>
+            <a class="modal__btn modal__btn--cancel" href="#">Отменить</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="fogot-post-code" class="modal">
+    <div class="modal__dialog">
+      <div class="modal__content">
+        <div class="modal__header">
+          <div class="modal__width">
+            <h3 class="modal__title">Сброс пароля</h3>
+            <p class="modal__descr text">Введите адрес электронной почты связанный с вашим аккаунтом</p>
+          </div>
+          <a href="#close" title="Close" class="modal__close"></a>
+        </div>
+        <div class="modal__body">
+          <form action="" class="modal__form">
+            <div class="modal__inputs">
+              <label class="modal__label modal__label--width"><input type="email" class="modal__input"
+                  placeholder="Электронная почта"></label>
+            </div>
+            <p class="modal__code-text modal__code-text--user">На почту <span>igrok@gmail.com</span> отправлен код <br> для восстановления пароля</p>
+            <div class="modal__code">
+              <p class="modal__code-text">Введите 4-x значный код:</p>
+              <div class="modal__code-inputs">
+                <input type="text" class="modal__code-input" required maxlength="1">
+                <input type="text" class="modal__code-input" required maxlength="1">
+                <input type="text" class="modal__code-input" required maxlength="1">
+                <input type="text" class="modal__code-input" required maxlength="1">
+              </div>
+              <p href="#" class="modal__code-sms"><a href="#">Запросить снова</a> <span>00:38</span></p>
+              <p class="modal__code-text modal__code-text--wrong">Неверный код!</p>
+            </div>
+            <button class="modal__btn modal__btn--width btn">Продолжить</button>
+            <a class="modal__btn modal__btn--cancel" href="#">Отменить</a>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  <header class="header">
+    <div class="container">
+      <div class="header__wrapper">
+        <a href="#" class="header__logo"><img src="/assets/img/Logo.svg"></a>
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item"><a href="#" class="header__link">Главная</a></li>
+            <li class="header__item"><a href="index2.html" class="header__link">О проекте</a></li>
+            <li class="header__item"><a href="index3.html" class="header__link">Возможности</a></li>
+            <li class="header__item"><a href="#" class="header__link">Карточки</a></li>
+            <li class="header__item"><a href="#" class="header__link">Статистика</a></li>
+            <li class="header__item"><a href="index4.html" class="header__link">FAQ</a></li>
+          </ul>
+        </nav>
+        <div class="header__btns">
+          <a class="header__login header__link" href="#">Войти</a>
+          <a class="header__reg btn" href="#">Регистрация</a>
+        </div>
+      </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="present">
+      <div class="container">
+        <div class="present__wrapper">
+          <p class="present__name">Cyber Sport Network</p>
+          <h1 class="present__title title">Играй, развивайся<br>и выигрывай<br>вместе с нами</h1>
+          <ul class="present__list">
+            <li class="present__item text">Ежедневные турниры</li>
+            <li class="present__item text">Уникальная рейтинговая система</li>
+            <li class="present__item text">Денежные призы</li>
+            <li class="present__item text">Развитие в любой отрасли киберспорта</li>
+            <li class="present__item text">Свой подход к читерству</li>
+            <li class="present__item text">Интересный матчмейкинг</li>
+          </ul>
+          <div class="present__btns">
+            <a href="#" class="present__btn btn">Присоединиться</a>
+            <a href="index2.html" class="present__btn present__btn--border">О проекте</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+  <div class="beta">
+    <p class="beta__text">Бета-версия</p><img src="assets/img/BETA.svg">
+  </div>
+  <ul class="navigation">
+    <li class="navigation__item navigation__item--current"><a href="index.html"></a></li>
+    <li class="navigation__item"><a href="index2.html"></a></li>
+    <li class="navigation__item"><a href="index3.html"></a></li>
+    <li class="navigation__item"><a href="index4.html"></a></li>
+    <li class="navigation__item"><a href="index5.html"></a></li>
+    <li class="navigation__item"><a href="index6.html"></a></li>
+    <li class="navigation__item"><a href="index7.html"></a></li>
+    <li class="navigation__item"><a href="index8.html"></a></li>
+    <li class="navigation__item"><a href="index9.html"></a></li>
+  </ul>
+  <div class="scroll">
+    <p class="scroll__text text text--center">Скролль чтобы увидеть больше</p>
+    <img src="assets/img/Arrow.svg" class="scroll__img">
+  </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="assets/js/modals.js"></script>
+</body>
+
+</html>

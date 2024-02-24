@@ -1,0 +1,39 @@
+.title {
+    color: #FFF;
+    font-size: 46px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 150%;
+    margin: 0;
+
+    &--center {
+        text-align: center;
+    }
+}
+
+.text {
+    color: #FFF;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    opacity: 0.75;
+
+    &--center {
+        text-align: center;
+    }
+}
+
+.subtitle {
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 160%;
+    /* 38.4px */
+
+    &--center {
+        text-align: center;
+    }
+}

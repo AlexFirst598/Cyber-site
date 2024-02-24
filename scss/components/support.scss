@@ -1,0 +1,41 @@
+.support {
+
+    &__title {
+        margin-bottom: 25px;
+    }
+
+    &__subtitle-one {
+        margin-bottom: 25px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+    }
+
+    &__list {
+        display: flex;
+        gap: 95px;
+    }
+
+    &__text {
+        max-width: 321px;
+        opacity: 1;
+    }
+
+    &__group {
+        display: flex;
+        gap: 25px;
+    }
+
+    &__link {
+        color: #F04451;
+        font-family: Raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        text-decoration-line: underline;
+    }
+}

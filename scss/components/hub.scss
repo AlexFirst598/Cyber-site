@@ -1,0 +1,79 @@
+.hub {
+    padding: 195px 0 180px;
+
+    &__main {
+        display: flex;
+        justify-content: space-between;
+        border-bottom: 1px solid #6a6a6a;
+        padding-bottom: 95px;
+        margin-bottom: 45px;
+        background-image: url('/assets/img/chiken.png');
+        background-repeat: no-repeat;
+        background-position: 796px bottom;
+    }
+
+    &__text {
+        opacity: 0.5;
+    }
+
+    &__link {
+        color: #FFF;
+        font-family: Raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+        padding: 15px;
+        display: block;
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 0.2;
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        h4 {
+            padding-left: 15px;
+        }
+    }
+
+    &__social {
+        padding: 10px;
+        display: block;
+        transition: opacity 0.3s;
+
+        &:hover {
+            opacity: 0.2;
+        }
+    }
+
+    &__text--social {
+        padding-left: 10px;
+    }
+
+    &__footer {
+        display: flex;
+        max-width: 1108px;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__text--footer {
+        padding: 15px;
+        transition: 0.3s;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

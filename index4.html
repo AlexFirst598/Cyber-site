@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Киберспортивная-платформа</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;600;700&family=Roboto:wght@400;500;700&family=Teko:wght@300;400&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/main.css" />
+</head>
+
+<body class="BG4">
+    <header class="header">
+        <div class="container">
+            <div class="header__wrapper">
+                <a href="#" class="header__logo"><img src="/assets/img/Logo.svg"></a>
+                <nav class="header__nav">
+                    <ul class="header__list">
+                        <li class="header__item"><a href="index.html" class="header__link">Главная</a></li>
+                        <li class="header__item"><a href="index2.html" class="header__link">О проекте</a></li>
+                        <li class="header__item"><a href="index3.html" class="header__link">Возможности</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Карточки</a></li>
+                        <li class="header__item"><a href="#" class="header__link">Статистика</a></li>
+                        <li class="header__item"><a href="#" class="header__link">FAQ</a></li>
+                    </ul>
+                </nav>
+                <div class="header__btns">
+                    <a class="header__login header__link" href="#">Войти</a>
+                    <a class="header__reg btn" href="#">Регистрация</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="main">
+
+        <section class="accordion">
+            <div class="container">
+                <div class="accordion__wrapper">
+                    <h2 class="accordion__title title">FAQ</h2>
+                    <ul class="accordion__list">
+                        <li class="accordion__item"><button class="accordion__button">Чем я могу помочь в роли
+                                тестировщика?<span></span></button>
+                            <div class="accordion__panel">
+                                <p class="text">Во время тестирования проекта, достаточно просто пользоваться всем
+                                    функционалом
+                                    сайта. Делай, что тебе угодно и при нахождении багов или ошибок сообщай нам,
+                                    мы будем очень признательны! А если у тебя есть опыт в тестировании проектов,
+                                    то это ещё лучше!</p>
+                            </div>
+                        </li>
+                        <li class="accordion__item"><button class="accordion__button">Что ещё я получу за тестирование
+                                проекта?<span></span></button>
+                            <div class="accordion__panel">
+                                <p class="text">Во время тестирования проекта, достаточно просто пользоваться всем
+                                    функционалом
+                                    сайта. Делай, что тебе угодно и при нахождении багов или ошибок сообщай нам,
+                                    мы будем очень признательны! А если у тебя есть опыт в тестировании проектов,
+                                    то это ещё лучше!</p>
+                            </div>
+                        </li>
+                        <li class="accordion__item"><button class="accordion__button">Я могу заниматься проведением
+                                турниров?<span></span></button>
+                            <div class="accordion__panel">
+                                <p class="text">Во время тестирования проекта, достаточно просто пользоваться всем
+                                    функционалом
+                                    сайта. Делай, что тебе угодно и при нахождении багов или ошибок сообщай нам,
+                                    мы будем очень признательны! А если у тебя есть опыт в тестировании проектов,
+                                    то это ещё лучше!</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+    </main>
+    <script>
+        var acc = document.getElementsByClassName("accordion__button");
+        var i;
+
+        for (i = 0; i < acc.length; i++) {
+            acc[i].addEventListener("click", function () {
+                this.classList.toggle("active");
+                var panel = this.nextElementSibling;
+                if (panel.style.maxHeight) {
+                    panel.style.maxHeight = null;
+                } else {
+                    panel.style.maxHeight = panel.scrollHeight + "px";
+                }
+            });
+        }
+    </script>
+    <div class="beta">
+        <p class="beta__text">Бета-версия</p><img src="assets/img/BETA.svg">
+    </div>
+    <ul class="navigation">
+        <li class="navigation__item navigation__item--current"><a href="index.html"></a></li>
+        <li class="navigation__item"><a href="index2.html"></a></li>
+        <li class="navigation__item"><a href="index3.html"></a></li>
+        <li class="navigation__item"><a href="index4.html"></a></li>
+        <li class="navigation__item"><a href="index5.html"></a></li>
+        <li class="navigation__item"><a href="index6.html"></a></li>
+        <li class="navigation__item"><a href="index7.html"></a></li>
+        <li class="navigation__item"><a href="index8.html"></a></li>
+        <li class="navigation__item"><a href="index9.html"></a></li>
+    </ul>
+</body>
+
+</html>

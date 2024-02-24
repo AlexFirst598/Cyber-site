@@ -1,0 +1,39 @@
+.contact {
+
+    &__links {
+        display: flex;
+        gap: 25px;
+    }
+
+    &__title {
+        margin: 50px 0;
+    }
+
+    &__subtitle {
+        margin-bottom: 15px;
+        color: #A2A2B9;
+        font-family: Raleway;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 160%;
+        /* 25.6px */
+    }
+
+    &__email {
+        color: #FAFAFA;
+        font-family: Raleway;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: 26px;
+        /* 144.444% */
+        text-decoration-line: underline;
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+        gap: 35px;
+    }
+}

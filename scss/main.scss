@@ -1,0 +1,56 @@
+@import 'vendor/normalize.scss';
+// Малые компоненты
+@import 'components/btn.scss';
+@import 'components/title&text.scss';
+@import 'components/BGS.scss';
+@import 'components/modal.scss';
+@import 'components/main-components.scss';
+// Большие компонетнты
+@import 'components/header.scss';
+@import 'components/present.scss';
+@import 'components/about.scss';
+@import 'components/advantages.scss';
+@import 'components/accordion.scss';
+@import 'components/contact.scss';
+@import 'components/thanks.scss';
+@import 'components/opportunities.scss';
+@import 'components/hub.scss';
+@import 'components/jobs.scss';
+@import 'components/stats.scss';
+@import 'components/support.scss';
+@import 'components/card.scss';
+
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Raleway', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  color: #fff;
+  background-color: #343849;
+}
+
+.container {
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 20px;
+  padding-left: 20px;
+  max-width: 1345px;
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
