@@ -11,7 +11,9 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;400;500;600;700&family=Roboto:wght@400;500;700&family=Teko:wght@300;400&display=swap"
         rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="assets/css/main.css" />
+
 </head>
 
 <body class="BG12">
@@ -40,14 +42,30 @@
         <section class="card">
             <div class="container">
                 <div class="card__wrapper">
-                    <div class="card__list">
+                    <div class="swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Slides -->
+                            <div class="swiper-slide"><img src="assets/img/CARD1.png" /></div>
+                            <div class="swiper-slide"><img src="assets/img/CARD2.png" /></div>
+                            <div class="swiper-slide"><img src="assets/img/CARD1.png" /></div>
+                            <div class="swiper-slide"><img src="assets/img/CARD2.png" /></div>
+                            <div class="swiper-slide"><img src="assets/img/CARD1.png" /></div>
+                            <div class="swiper-slide"><img src="assets/img/CARD2.png" /></div>
+                        </div>
+                        <!-- If we need navigation buttons -->
+
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                    <!-- <div class="card__list">
                         <div class="card__item card__item--active"><img src="assets/img/CARD1.png"></div>
                         <div class="card__item "><img src="assets/img/CARD2.png"></div>
                         <div class="card__item "><img src="assets/img/CARD1.png"></div>
                         <div class="card__item "><img src="assets/img/CARD2.png"></div>
                         <div class="card__arrow card__arrow--left"></div>
                         <div class="card__arrow card__arrow--right"></div>
-                    </div>
+                    </div> -->
                     <h2 class="card__title title--center title">Ваши персональные карточки</h2>
                     <p class="card__text text--center text">У каждого пользователя, команды и даже сообщества
                         есть личная карточка с рейтингом и информацией. Она упрощает поиск и общение
@@ -57,6 +75,24 @@
         </section>
 
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+            // Optional parameters
+            direction: 'horizontal',
+            loop: true,
+            slidesPerView: 3,
+            spaceBetween: 20,
+
+            // Navigation arrows
+            navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+            },
+
+            centeredSlides: true,
+        });
+    </script>
     <script src="assets/js/cards-slider.js"></script>
 </body>
 

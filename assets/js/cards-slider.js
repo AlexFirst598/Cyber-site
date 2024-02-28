@@ -42,7 +42,7 @@ function visibleSlides() {
     for (let index = 0; index < items.length; index++) {
         const element = items[index];
         if (element.classList.contains('card__item--active')) {
-
+            
         }
     }
 }
