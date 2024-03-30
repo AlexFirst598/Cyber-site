@@ -5,12 +5,35 @@
         display: flex;
         align-items: center;
         justify-content: space-between;
+
+
+        @media(max-width: 1344px) {
+            justify-content: unset;
+
+        }
     }
 
-    &__logo {}
+    &__menu-btn {
+        width: 60px;
+        height: 60px;
+        background-image: url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M43.5 24C44.3284 24 45 23.3284 45 22.5C45 21.6716 44.3284 21 43.5 21H16.5C15.6716 21 15 21.6716 15 22.5C15 23.3284 15.6716 24 16.5 24L43.5 24ZM43.5 39C44.3284 39 45 38.3284 45 37.5C45 36.6716 44.3284 36 43.5 36H16.5C15.6716 36 15 36.6716 15 37.5C15 38.3284 15.6716 39 16.5 39H43.5ZM45 29.5C45 30.3284 44.3284 31 43.5 31L24.5 31C23.6716 31 23 30.3284 23 29.5C23 28.6716 23.6716 28 24.5 28L43.5 28C44.3284 28 45 28.6716 45 29.5Z' fill='white'/%3E%3C/svg%3E%0A");
+        display: none;
+
+        @media(max-width: 1344px) {
+            display: block;
+        }
+
+        @media(max-width: 959px) {
+            margin-left: auto;
+        }
+    }
 
     &__list {
         display: flex;
+
+        @media(max-width: 1344px) {
+            display: none;
+        }
     }
 
     &__link {
@@ -21,6 +44,7 @@
         font-weight: 400;
         line-height: normal;
         transition: color 0.3s;
+
 
         &:hover {
             color: #F04451;
@@ -46,5 +70,15 @@
 
     &__btns {
         display: flex;
+
+        @media(max-width: 1344px) {
+            margin-left: auto;
+            margin-right: 90px;
+        }
+
+        @media(max-width: 959px) {
+            display: none;
+        }
+
     }
 }

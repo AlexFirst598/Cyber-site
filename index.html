@@ -30,13 +30,13 @@
           <a href="#close" title="Close" class="modal__close"></a>
         </div>
         <div class="modal__body">
-          <form action="" class="modal__form">
+          <form method="post" id="register-form" class="modal__form">
             <div class="modal__inputs">
-              <label class="modal__label"><input type="text" required class="modal__input"><span>Никнейм</span></label>
-              <label class="modal__label"><input type="email" required class="modal__input"><span>Электронная
-                  почта</span></label>
-              <label class="modal__label"><input type="password" required class="modal__input"><span>Пароль</span></label>
-              <label class="modal__label"><input type="password" required class="modal__input"><span>Повтор пароля</span></label>
+              <label class="modal__label"><input type="text" required class="modal__input"><span class="modal__error">Никнейм должен содержать от 3 до 24 латинских символов. Разрешены "_" ".".</span><span>Никнейм</span></label>
+              <label class="modal__label"><input type="email" maxlength="32" minlength="5" required class="modal__input"><span class="modal__error">Введен некоректный адрес почты</span><span>Электронная почта</span></label>
+              <label class="modal__label"><input type="password" required class="modal__input"><span class="modal__error">Пароль должен состоять от 6 до 18 символов, используя строчный и заглавные буквы A-z</span><span>Пароль</span><span class="modal__eye"></span></label>
+              <label class="modal__label"><input type="password" required class="modal__input"><span class="modal__error">Пароли не совпадают</span><span>Повтор пароля</span><span class="modal__eye"></span></label>
+              <span></span>
             </div>
             <div class="modal__checkbox">
               <input type="checkbox" id="checkbox" required>
@@ -65,12 +65,13 @@
           <a href="#close" title="Close" class="modal__close"></a>
         </div>
         <div class="modal__body">
-          <form action="" class="modal__form">
+          <form id="loginForm" class="modal__form">
             <div class="modal__inputs modal__inputs--fogot">
-              <label class="modal__label"><input type="email" class="modal__input"
-                  placeholder="example@gmail.com" required><span>Электронная
+              <label class="modal__label"><input type="email" class="modal__input" placeholder="example@gmail.com"
+                  required><span class="modal__error">Неверный логин</span><span>Электронная
                   почта</span></label>
-              <label class="modal__label"><input type="password" class="modal__input" placeholder="Пароль" ></label>
+              <label class="modal__label"><input type="password" id="loginPass" required class="modal__input"><span class="modal__error">Неверный пароль</span><span>Пароль</span><span
+                  class="modal__eye"></span></label>
               <a class="modal__fogot" href="#">Забыли пароль?</a>
             </div>
             <div class="modal__checkbox">
@@ -95,10 +96,10 @@
           <a href="#close" title="Close" class="modal__close"></a>
         </div>
         <div class="modal__body">
-          <form action="" class="modal__form">
+          <form id="fogotForm" class="modal__form">
             <div class="modal__inputs">
               <label class="modal__label modal__label--width"><input type="email" class="modal__input"
-                  placeholder="Электронная почта" required></label>
+                  placeholder="Электронная почта" required><span class="modal__error">Такой почты не существует!</span></label>
             </div>
             <button class="modal__btn modal__btn--width btn">Продолжить</button>
             <a class="modal__btn modal__btn--cancel" href="#">Отменить</a>
@@ -118,19 +119,20 @@
           <a href="#close" title="Close" class="modal__close"></a>
         </div>
         <div class="modal__body">
-          <form action="" class="modal__form">
-            <div class="modal__inputs">
+          <form id="fogot-form" class="modal__form" method="post">
+            <!-- <div class="modal__inputs">
               <label class="modal__label modal__label--width"><input type="email" class="modal__input"
                   placeholder="Электронная почта"></label>
-            </div>
-            <p class="modal__code-text modal__code-text--user">На почту <span>igrok@gmail.com</span> отправлен код <br> для восстановления пароля</p>
+            </div> -->
+            <p class="modal__code-text modal__code-text--user">На почту <span id="email-value">example@gmail.com</span> отправлен код <br>
+              для восстановления пароля</p>
             <div class="modal__code">
               <p class="modal__code-text">Введите 4-x значный код:</p>
               <div class="modal__code-inputs">
-                <input type="text" class="modal__code-input" required maxlength="1">
-                <input type="text" class="modal__code-input" required maxlength="1">
-                <input type="text" class="modal__code-input" required maxlength="1">
-                <input type="text" class="modal__code-input" required maxlength="1">
+                <input id="InputOne" type="text" class="modal__code-input" required maxlength="1">
+                <input id="InputTwo" type="text" class="modal__code-input" required maxlength="1">
+                <input id="InputThree" type="text" class="modal__code-input" required maxlength="1">
+                <input id="InputFour" type="text" class="modal__code-input" required maxlength="1">
               </div>
               <p href="#" class="modal__code-sms"><a href="#">Запросить снова</a> <span>00:38</span></p>
               <p class="modal__code-text modal__code-text--wrong">Неверный код!</p>
@@ -160,6 +162,7 @@
           <a class="header__login header__link" href="#">Войти</a>
           <a class="header__reg btn" href="#">Регистрация</a>
         </div>
+        <div class="header__menu-btn"></div>
       </div>
     </div>
   </header>

@@ -1,11 +1,17 @@
 .opportunities {
 
+    @media(max-width: 1344px) {
+        overflow-x: visible;
+      }
+
     padding: 162px 0 273px;
 
     &__list {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr 1fr;
         gap: 35px;
+        width: 1305px;
+        overflow-x: auto;
     }
 
     &__subtitle {
@@ -29,6 +35,11 @@
         line-height: 140%;
         opacity: 0.75;
         margin-bottom: 15px;
+        display: none;
+
+        &--active {
+            display: block;
+        }
     }
 
     &__dots {
@@ -41,9 +52,15 @@
         height: 8px;
         border-radius: 15px;
         background: rgba(217, 217, 217, 0.25);
+        cursor: pointer;
+        transition: opacity 0.3s;
 
         &--active {
             background: #D9D9D9;
+        }
+
+        &:hover {
+            opacity: 0.5;
         }
     }
 
@@ -57,6 +74,7 @@
         padding: 85px 0;
         background-repeat: no-repeat;
         background-position: left center;
+        position: relative;
 
         &:nth-child(1) {
             background-image: url('/assets/img/card1.svg');
@@ -83,4 +101,27 @@
         margin-bottom: 35px;
     }
 
+    &__arrow {
+        width: 34px;
+        height: 34px;
+        background-image: url("data:image/svg+xml,%3Csvg width='34' height='34' viewBox='0 0 34 34' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M13.0005 9L21.0005 17L13.0005 25' stroke='white' stroke-width='1.5' stroke-linecap='round'/%3E%3C/svg%3E%0A");
+        position: absolute;
+        cursor: pointer;
+        transition: opacity 0.3s;
+        
+        top: calc(50% - 34px / 2);
+
+        &--next {
+            right: 0px;
+        }
+
+        &--prev {
+            transform: rotate(180deg);
+            left: 0px;
+        }
+
+        &:hover {
+            opacity: 0.5;
+        }
+    }
 }

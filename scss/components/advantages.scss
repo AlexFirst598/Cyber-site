@@ -2,10 +2,32 @@
     background-image: url('/assets/img/Arrows.svg');
     background-repeat: no-repeat;
     padding: 114px 0 223px;
-    background-position: 220px center;
+    background-position: 35% center;
+
+    @media(max-width: 1400px) {
+        background-image: none;
+        padding: 40px 0 91px;
+    }
+
+    @media(max-width: 959px) {}
+
+    @media(max-width: 639px) {
+        padding: 40px 0 191px;
+        background-size: 250px;
+    }
 
     &__title {
         padding-bottom: 50px;
+    }
+
+    &__wrapper {
+        @media(max-width: 1400px) {
+            padding: 0 80px;
+        }
+
+        @media(max-width: 959px) {
+            padding: 0;
+        }
     }
 
     &__list {
@@ -15,6 +37,25 @@
         ;
         column-gap: 35px;
         row-gap: 39px;
+
+        @media(max-width: 1400px) {
+            grid-template-areas: 'item1 item3'
+                'item2 item4'
+            ;
+            column-gap: 100px;
+            row-gap: 75px;
+        }
+
+        @media(max-width: 959px) {
+            column-gap: 20px;
+            row-gap: 25px;
+        }
+
+        @media(max-width: 639px) {
+            grid-template-areas: 'item1' 'item3'
+                'item2' 'item4'
+            ;
+        }
     }
 
     &__items {
@@ -69,8 +110,10 @@
             font-weight: 700;
             line-height: 150%;
             /* 27px */
+
+            @media(max-width: 639px) {
+                font-size: 16px;
+            }
         }
     }
-
-    &__wrapper {}
 }

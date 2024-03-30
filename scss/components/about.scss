@@ -5,11 +5,39 @@
     padding-top: 245px;
     padding-bottom: 307px;
 
-    &__wrapper {}
+    @media(max-width: 1750px) {
+        background-size: 900px;
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+
+    @media(max-width: 1344px) {
+        background-size: 600px;
+        background-position-x: -40px;
+        padding-top: 174px;
+    }
+
+    @media(max-width: 959px) {
+        background-size: 570px;
+        padding-top: 50px;
+        padding-bottom: 319px;
+        background-position-y: bottom;
+    }
+
+    @media(max-width: 639px) {
+        padding-top: 47px;
+        padding-bottom: 370px;
+        background-position-y: bottom;
+        background-size: 500px;
+    }
 
     &__group {
         max-width: 425px;
         margin-left: auto;
+
+        @media(max-width: 959px) {
+            margin-left: unset;
+        }
     }
 
     &__title {

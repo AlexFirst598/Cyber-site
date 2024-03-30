@@ -8,6 +8,10 @@
     padding: 20px 35px;
     gap: 10px;
 
+    @media(max-width: 1344px) {
+        display: none;
+    }
+
     &__text {
         color: #FFF;
         font-family: Raleway;
@@ -28,6 +32,10 @@
     top: 50%;
     transform: translateY(-50%);
     gap: 25px;
+
+    @media(max-width: 1550px) {
+        display: none;
+    }
 
     &__item {
         width: 15px;
@@ -59,4 +67,8 @@
     bottom: 30px;
     transform: translateX(-50%);
     opacity: 0.5;
+
+    @media(max-width: 1344px) {
+        display: none;
+    }
 }

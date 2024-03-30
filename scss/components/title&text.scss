@@ -9,6 +9,14 @@
     &--center {
         text-align: center;
     }
+
+    @media(max-width: 1344px) {
+        font-size: 36px;
+    }
+
+    @media(max-width: 639px) {
+        font-size: 24px;
+    }
 }
 
 .text {
@@ -21,6 +29,10 @@
 
     &--center {
         text-align: center;
+    }
+
+    @media(max-width: 639px) {
+        font-size: 14px;
     }
 }
 

@@ -16,23 +16,40 @@
     }
 
     &__item {
-        padding: 24px;
+        padding: 26px;
         display: flex;
         gap: 12px;
         flex-direction: column;
         align-items: center;
         opacity: 0.5;
-        transition: all 0.3s;
+        transition: opacity 0.3s;
+        cursor: pointer;
+        user-select: none;
+
+        svg {
+            transition: color 0.3s;
+        }
 
         &--active {
             opacity: 1;
             border-radius: 15px;
             border: 2px solid #FFF;
+            animation: fade 1s;
+            padding: 24px;
+            
 
             svg {
                 color: #F04451;
             }
         }
+
+        // &:hover {
+        //     opacity: 1;
+
+        //     svg {
+        //         color: #F04451;
+        //     }
+        // }
 
         p {
             font-size: 15px;
@@ -50,6 +67,7 @@
         border: 2px solid #FFF;
         padding: 46px;
         max-width: 885px;
+        animation: fade 2s;
     }
 
     &__arrow {
@@ -85,5 +103,15 @@
         align-items: center;
         gap: 35px;
         margin-bottom: 110px;
+    }
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0.1;
+    }
+
+    100% {
+        opacity: 1;
     }
 }

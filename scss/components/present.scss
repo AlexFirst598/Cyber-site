@@ -5,6 +5,27 @@
     padding-top: 147px;
     background-position: right center;
 
+    @media(max-width: 1800px) {
+        background-size: 775px;
+    }
+
+    @media(max-width: 1344px) {
+        background-size: 690px;
+        padding-bottom: 166px;
+        padding-top: 43px;
+    }
+
+    @media(max-width: 959px) {
+        background-image: url('/assets/img/main-page-img.png');
+        background-size: unset;
+        background-position: right bottom;
+    }
+
+    @media(max-width: 639px) {
+        padding: 40px 0 191px;
+        background-size: 250px;
+    }
+
     &__name {
         color: #FFF;
         font-size: 18px;
@@ -13,6 +34,10 @@
         line-height: 150%;
         opacity: 0.5;
         margin-bottom: 15px;
+
+        @media(max-width: 639px) {
+            font-size: 14px;
+        }
     }
 
     &__title {
@@ -25,6 +50,15 @@
         line-height: 110%;
         text-transform: uppercase;
         margin-bottom: 25px;
+
+        @media(max-width: 1344px) {
+            font-size: 36px;
+        }
+
+        @media(max-width: 639px) {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
     }
 
     &__item {
@@ -46,6 +80,14 @@
             background: #F04451;
 
         }
+
+        @media(max-width: 1344px) {
+            font-size: 16px;
+        }
+
+        @media(max-width: 639px) {
+            font-size: 14px;
+        }
     }
 
     &__list {
@@ -54,16 +96,33 @@
         column-gap: 25px;
         row-gap: 10px;
         margin-bottom: 45px;
+
+        @media(max-width: 1344px) {
+            grid-template-columns: max-content;
+        }
+
+        @media(max-width: 639px) {
+            margin-bottom: 25px;
+        }
     }
 
     &__btn--border {
         padding: 19px 35px 21px 35px;
+        font-size: 18px;
         border-radius: 15px;
         border: 2px solid #FFF;
         color: #FFF;
         display: block;
         width: fit-content;
         transition: color 0.3s, border 0.3s;
+
+        @media(max-width: 1344px) {
+            font-size: 16px;
+        }
+
+        @media(max-width: 639px) {
+            font-size: 14px;
+        }
 
         &:hover {
             border: 2px solid #F04451;
@@ -79,5 +138,9 @@
     &__btns {
         display: flex;
         gap: 15px;
+
+        @media(max-width: 639px) {
+            flex-direction: column;
+        }
     }
 }
