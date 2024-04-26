@@ -1,6 +1,15 @@
 .jobs {
 
     padding: 195px 0 126px;
+    overflow-x: hidden;
+
+    @media(max-width: 959px) {
+        padding-top: 60px;
+    }
+
+    @media(max-width: 639px) {
+        padding-top: 50px;
+    }
 
     &__wrapper {
         display: flex;
@@ -12,7 +21,19 @@
     &__list {
         display: flex;
         gap: 25px;
+        overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
 
+        @media(max-width: 959px) {
+            width: 100%;
+        }
+
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
     }
 
     &__item {
@@ -26,6 +47,12 @@
         cursor: pointer;
         user-select: none;
 
+        @media(max-width: 959px) {
+            border-radius: 15px;
+            border: 2px solid #FFF;
+            padding: 24px;
+        }
+
         svg {
             transition: color 0.3s;
         }
@@ -36,7 +63,11 @@
             border: 2px solid #FFF;
             animation: fade 1s;
             padding: 24px;
-            
+
+            @media(max-width: 959px) {
+                border: 2px solid  #F04451;
+            }
+
 
             svg {
                 color: #F04451;
@@ -58,6 +89,27 @@
 
     &__title {
         margin-bottom: 35px;
+        text-align: center;
+
+        br {
+            display: none;
+        }
+
+        @media(max-width: 1344px) {
+            margin-bottom: 50px;
+        }
+
+        @media(max-width: 959px) {
+            margin-bottom: 35px;
+
+            br {
+                display: block;
+            }
+        }
+
+        @media(max-width: 639px) {
+            margin-bottom: 25px;
+        }
     }
 
     &__info {
@@ -92,6 +144,10 @@
         &:hover {
             opacity: 0.5;
         }
+        
+        @media(max-width: 959px) {
+            display: none;
+        }
     }
 
     &__arrow-prev {
@@ -99,10 +155,24 @@
     }
 
     &__group {
-        display: flex;
+        display: grid;
+        grid-template-columns: max-content 1fr max-content;
         align-items: center;
         gap: 35px;
         margin-bottom: 110px;
+
+        @media(max-width: 1344px) {
+            margin-bottom: 65px;
+        }
+
+        @media(max-width: 959px) {
+            grid-template-columns: 1fr;
+            margin-bottom: 85px;
+        }
+
+        @media(max-width: 639px) {
+            margin-bottom: 35px;
+        }
     }
 }
 

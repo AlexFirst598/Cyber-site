@@ -1,65 +1,85 @@
-.stats {
+// .stats {
 
-    &__wrapper {
-        position: relative;
-    }
+//     &__wrapper {
+//         position: relative;
+//     }
 
-    &__item {
-        position: absolute;
+    // &__item {
+    //     position: absolute;
 
-        img {
-            position: absolute;
-        }
+    //     img {
+    //         position: absolute;
 
-        &:nth-child(1) {
-            top: 355px;
+    //         @media(max-width: 1344px) {
+    //             display: none;
+    //         }
+    //     }
 
-            img {
-                bottom: -423px;
-            }
-        }
+    //     &:nth-child(1) {
+    //         top: 355px;
 
-        &:nth-child(2) {
-            top: 145px;
-            left: 230px;
+    //         @media(max-width: 1344px) {
+    //             top: 415px;
+    //             left: 15px;
+    //         }
 
-            img {
-                bottom: -627px;
-            }
-        }
+    //         img {
+    //             bottom: -423px;
+    //         }
+    //     }
 
-        &:nth-child(3) {
-            left: 555px;
-            top: 586px;
+    //     &:nth-child(2) {
+    //         top: 145px;
+    //         left: 230px;
 
-            img {
-                bottom: -180px;
-                left: -80px;
-            }
-        }
+    //         @media(max-width: 1344px) {
+                
+    //         }
 
-        &:nth-child(4) {
-            left: 710px;
-            top: 161px;
+    //         img {
+    //             bottom: -627px;
+    //         }
+    //     }
 
-            img {
-                bottom: -605px;
-            }
-        }
+    //     &:nth-child(3) {
+    //         left: 555px;
+    //         top: 586px;
 
-    }
+    //         @media(max-width: 1344px) {
+    //             left: 495px;
+    //             top: 536px;
+    //         }
 
-    &__value {
-        color: #FFF;
-        font-family: Raleway;
-        font-size: 64px;
-        font-style: normal;
-        font-weight: 100;
-        line-height: normal;
-        margin-bottom: 15px;
-    }
+    //         img {
+    //             bottom: -180px;
+    //             left: -80px;
+    //         }
+    //     }
 
-    &__text {
-        // opacity: 0.75;
-    }
-}
+    //     &:nth-child(4) {
+    //         left: 710px;
+    //         top: 161px;
+
+
+
+    //         img {
+    //             bottom: -605px;
+    //         }
+    //     }
+
+    // }
+
+    // &__value {
+    //     color: #FFF;
+    //     font-family: Raleway;
+    //     font-size: 64px;
+    //     font-style: normal;
+    //     font-weight: 100;
+    //     line-height: normal;
+    //     margin-bottom: 15px;
+    // }
+
+    // &__text {
+    //     // opacity: 0.75;
+    // }
+// }

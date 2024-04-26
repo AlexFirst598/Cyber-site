@@ -15,6 +15,24 @@
 </head>
 
 <body class="BG1">
+  <div class="menu">
+    <div class="menu__wrapper">
+      <a href="#" class="menu__btn"><img src="assets/img/Menu-burger.svg"></a>
+      <nav class="menu__nav">
+        <ul class="menu__list">
+          <li class="menu__item"><a href="index.html" class="menu__link">Главная</a></li>
+          <li class="menu__item"><a href="index2.html" class="menu__link">О проекте</a></li>
+          <li class="menu__item"><a href="index7.html" class="menu__link">Возможности</a></li>
+          <li class="menu__item"><a href="index12.html" class="menu__link">Карточки</a></li>
+          <li class="menu__item"><a href="index10.html" class="menu__link">Статистика</a></li>
+          <li class="menu__item"><a href="index4.html" class="menu__link">FAQ</a></li>
+        </ul>
+      </nav>
+      <div class="beta beta--menu">
+        <p class="beta__text">Бета-версия</p><img src="assets/img/BETA.svg">
+      </div>
+    </div>
+  </div>
   <div id="register" class="modal">
     <div class="modal__dialog">
       <div class="modal__content">
@@ -32,10 +50,18 @@
         <div class="modal__body">
           <form method="post" id="register-form" class="modal__form">
             <div class="modal__inputs">
-              <label class="modal__label"><input type="text" required class="modal__input"><span class="modal__error">Никнейм должен содержать от 3 до 24 латинских символов. Разрешены "_" ".".</span><span>Никнейм</span></label>
-              <label class="modal__label"><input type="email" maxlength="32" minlength="5" required class="modal__input"><span class="modal__error">Введен некоректный адрес почты</span><span>Электронная почта</span></label>
-              <label class="modal__label"><input type="password" required class="modal__input"><span class="modal__error">Пароль должен состоять от 6 до 18 символов, используя строчный и заглавные буквы A-z</span><span>Пароль</span><span class="modal__eye"></span></label>
-              <label class="modal__label"><input type="password" required class="modal__input"><span class="modal__error">Пароли не совпадают</span><span>Повтор пароля</span><span class="modal__eye"></span></label>
+              <label class="modal__label"><input type="text" required class="modal__input"><span
+                  class="modal__error">Никнейм должен содержать от 3 до 24 латинских символов. Разрешены "_"
+                  ".".</span><span>Никнейм</span></label>
+              <label class="modal__label"><input type="email" maxlength="32" minlength="5" required
+                  class="modal__input"><span class="modal__error">Введен некоректный адрес почты</span><span>Электронная
+                  почта</span></label>
+              <label class="modal__label"><input type="password" required class="modal__input"><span
+                  class="modal__error">Пароль должен состоять от 6 до 18 символов, используя строчный и заглавные буквы
+                  A-z</span><span>Пароль</span><span class="modal__eye"></span></label>
+              <label class="modal__label"><input type="password" required class="modal__input"><span
+                  class="modal__error">Пароли не совпадают</span><span>Повтор пароля</span><span
+                  class="modal__eye"></span></label>
               <span></span>
             </div>
             <div class="modal__checkbox">
@@ -70,8 +96,8 @@
               <label class="modal__label"><input type="email" class="modal__input" placeholder="example@gmail.com"
                   required><span class="modal__error">Неверный логин</span><span>Электронная
                   почта</span></label>
-              <label class="modal__label"><input type="password" id="loginPass" required class="modal__input"><span class="modal__error">Неверный пароль</span><span>Пароль</span><span
-                  class="modal__eye"></span></label>
+              <label class="modal__label"><input type="password" id="loginPass" required class="modal__input"><span
+                  class="modal__error">Неверный пароль</span><span>Пароль</span><span class="modal__eye"></span></label>
               <a class="modal__fogot" href="#">Забыли пароль?</a>
             </div>
             <div class="modal__checkbox">
@@ -99,7 +125,8 @@
           <form id="fogotForm" class="modal__form">
             <div class="modal__inputs">
               <label class="modal__label modal__label--width"><input type="email" class="modal__input"
-                  placeholder="Электронная почта" required><span class="modal__error">Такой почты не существует!</span></label>
+                  placeholder="Электронная почта" required><span class="modal__error">Такой почты не
+                  существует!</span></label>
             </div>
             <button class="modal__btn modal__btn--width btn">Продолжить</button>
             <a class="modal__btn modal__btn--cancel" href="#">Отменить</a>
@@ -124,7 +151,8 @@
               <label class="modal__label modal__label--width"><input type="email" class="modal__input"
                   placeholder="Электронная почта"></label>
             </div> -->
-            <p class="modal__code-text modal__code-text--user">На почту <span id="email-value">example@gmail.com</span> отправлен код <br>
+            <p class="modal__code-text modal__code-text--user">На почту <span id="email-value">example@gmail.com</span>
+              отправлен код <br>
               для восстановления пароля</p>
             <div class="modal__code">
               <p class="modal__code-text">Введите 4-x значный код:</p>
@@ -150,11 +178,11 @@
         <a href="#" class="header__logo"><img src="/assets/img/Logo.svg"></a>
         <nav class="header__nav">
           <ul class="header__list">
-            <li class="header__item"><a href="#" class="header__link">Главная</a></li>
+            <li class="header__item"><a href="index.html" class="header__link">Главная</a></li>
             <li class="header__item"><a href="index2.html" class="header__link">О проекте</a></li>
-            <li class="header__item"><a href="index3.html" class="header__link">Возможности</a></li>
-            <li class="header__item"><a href="#" class="header__link">Карточки</a></li>
-            <li class="header__item"><a href="#" class="header__link">Статистика</a></li>
+            <li class="header__item"><a href="index7.html" class="header__link">Возможности</a></li>
+            <li class="header__item"><a href="index12.html" class="header__link">Карточки</a></li>
+            <li class="header__item"><a href="index10.html" class="header__link">Статистика</a></li>
             <li class="header__item"><a href="index4.html" class="header__link">FAQ</a></li>
           </ul>
         </nav>
@@ -194,13 +222,13 @@
   <ul class="navigation">
     <li class="navigation__item navigation__item--current"><a href="index.html"></a></li>
     <li class="navigation__item"><a href="index2.html"></a></li>
-    <li class="navigation__item"><a href="index3.html"></a></li>
-    <li class="navigation__item"><a href="index4.html"></a></li>
-    <li class="navigation__item"><a href="index5.html"></a></li>
-    <li class="navigation__item"><a href="index6.html"></a></li>
     <li class="navigation__item"><a href="index7.html"></a></li>
-    <li class="navigation__item"><a href="index8.html"></a></li>
+    <li class="navigation__item"><a href="index12.html"></a></li>
+    <li class="navigation__item"><a href="index10.html"></a></li>
+    <li class="navigation__item"><a href="index4.html"></a></li>
+    <li class="navigation__item"><a href="index3.html"></a></li>
     <li class="navigation__item"><a href="index9.html"></a></li>
+    <li class="navigation__item"><a href="index8.html"></a></li>
   </ul>
   <div class="scroll">
     <p class="scroll__text text text--center">Скролль чтобы увидеть больше</p>
@@ -208,6 +236,7 @@
   </div>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
   <script src="assets/js/modals.js"></script>
+  <script src="assets/js/menu.js"></script>
 </body>
 
 </html>

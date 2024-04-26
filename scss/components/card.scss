@@ -2,6 +2,10 @@
 
     padding: 101px 0 203px;
 
+    @media(max-width: 1344px) {
+        padding: 35px 0 76px;
+    }
+
     &__wrapper {
         position: relative;
     }
@@ -90,6 +94,10 @@
     width: 50%;
     height: 50%;
     transition: all 0.1s;
+
+    @media(max-width: 1344px) {
+        width: 30%;
+    }
 }
 
 .swiper-slide-active {

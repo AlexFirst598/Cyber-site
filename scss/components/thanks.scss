@@ -1,4 +1,5 @@
 .thanks {
+    overflow-x: hidden;
 
     &__title {
         margin-bottom: 25px;
@@ -12,6 +13,10 @@
         font-weight: 400;
         line-height: 160%;
         margin-bottom: 50px;
+
+        @media(max-width:639px) {
+            font-size: 14px;
+        }
     }
 
     &__list {
@@ -20,6 +25,19 @@
         gap: 30px;
         max-width: 1015px;
         margin-bottom: 100px;
+
+        @media(max-width:959px) {
+            width: 100%;
+            overflow-x: auto;
+            scrollbar-width: none;
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+
+        }
+        @media(max-width:639px) {
+            margin-bottom: 50px;
+        }
+        
     }
 
     &__enter-list {
@@ -30,6 +48,11 @@
         display: flex;
         flex-direction: column;
         gap: 12px;
+        width: 250px;
+
+        @media(max-width:639px) {
+            padding: 0 50px;
+        }
     }
 
     &__name {
@@ -39,10 +62,16 @@
         font-style: normal;
         font-weight: 400;
         line-height: 140%;
+        white-space: nowrap;
     }
 
     &__subtitle {
         margin-bottom: 25px;
+
+        @media(max-width:639px) {
+            font-size: 18px;
+
+        }
     }
 
     &__enter-list {
@@ -64,9 +93,10 @@
 
     &__enter-item {
 
-        &::before {
-
+        @media(max-width:639px) {
+            font-size: 14px;
         }
+        &::before {}
     }
 
     &__enter-list {

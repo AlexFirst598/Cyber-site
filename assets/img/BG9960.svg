@@ -1,0 +1,22 @@
+<svg width="960" height="800" viewBox="0 0 960 800" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M127.225 450.395C127.83 439.259 127.734 428.1 126.939 416.984C126.777 414.606 126.577 412.225 126.346 409.87C125.866 404.636 125.112 399.434 124.087 394.284C122.524 393.525 119.451 392.034 119.451 392.034L110.33 405.578L106.583 411.141L106.593 411.162C92.2902 410.12 78.0945 414.575 66.8463 423.635C66.9893 423.659 67.1422 423.688 67.2878 423.713C81.094 426.478 94.3507 431.493 106.54 438.562C114.214 442.784 121.061 448.377 126.751 455.072C126.918 453.791 127.051 452.446 127.165 451.07C127.184 450.843 127.207 450.624 127.225 450.395Z" fill="#343849"/>
+<path d="M794.676 552.225C805.812 552.83 816.972 552.734 828.088 551.939C830.465 551.777 832.846 551.577 835.202 551.346C840.435 550.866 845.638 550.112 850.788 549.087C851.546 547.524 853.037 544.451 853.037 544.451L839.493 535.33L833.93 531.583L833.909 531.593C834.951 517.29 830.496 503.094 821.436 491.846C821.413 491.989 821.383 492.142 821.358 492.288C818.593 506.094 813.578 519.351 806.509 531.54C802.287 539.214 796.694 546.061 790 551.751C791.28 551.918 792.625 552.051 794.002 552.165C794.228 552.184 794.447 552.207 794.676 552.225Z" fill="#343849"/>
+<g opacity="0.5" filter="url(#filter0_f_136_3652)">
+<circle cx="226.5" cy="637.5" r="206.5" fill="#F04451" fill-opacity="0.5"/>
+</g>
+<g opacity="0.5" filter="url(#filter1_f_136_3652)">
+<circle cx="769.5" cy="135.5" r="206.5" fill="#F04451" fill-opacity="0.5"/>
+</g>
+<defs>
+<filter id="filter0_f_136_3652" x="-480" y="-69" width="1413" height="1413" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_136_3652"/>
+</filter>
+<filter id="filter1_f_136_3652" x="63" y="-571" width="1413" height="1413" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+<feGaussianBlur stdDeviation="250" result="effect1_foregroundBlur_136_3652"/>
+</filter>
+</defs>
+</svg>

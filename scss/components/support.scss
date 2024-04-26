@@ -4,19 +4,48 @@
         margin-bottom: 25px;
     }
 
+    &__subtitle {
+        
+        @media(max-width:639px) {
+            font-size: 16px;
+        }
+    }
+
     &__subtitle-one {
         margin-bottom: 25px;
+
+        @media(max-width:639px) {
+            margin-bottom: 0;
+            font-size: 18px;
+        }
     }
 
     &__item {
         display: flex;
         flex-direction: column;
         gap: 25px;
+
+        
     }
 
     &__list {
         display: flex;
         gap: 95px;
+
+        @media(max-width:1344px) {
+            gap: 123px;
+        }
+
+        @media(max-width:959px) {
+            gap: 68px;
+        }
+
+        @media(max-width:639px) {
+            flex-direction: column;
+            gap: 38px;
+        }
+
+        
     }
 
     &__text {

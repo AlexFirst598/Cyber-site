@@ -12,6 +12,14 @@
         display: none;
     }
 
+    &--menu {
+        right: 138px;
+        
+        @media(max-width: 1344px) {
+            display: flex;
+        }
+    }
+
     &__text {
         color: #FFF;
         font-family: Raleway;

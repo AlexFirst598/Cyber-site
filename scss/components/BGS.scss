@@ -63,12 +63,26 @@
     background-image: url('/assets/img/BG4.svg');
     background-color: #040614;
     @include BG;
+
+    @media(max-width: 1344px) {
+        background-image: url('/assets/img/BG8960.svg');
+    }
+
+    @media(max-width: 959px) {
+        background-image: url('/assets/img/BG8640.svg');
+    }
+
+    @media(max-width: 639px) {
+        background-image: url('/assets/img/BG8360.svg');
+    }
 }
 
 .BG5 {
     background-image: url('/assets/img/BG5.svg');
     background-color: #00010F;
+    background-position: center;
     @include BG;
+    
 }
 
 .BG6 {
@@ -80,36 +94,107 @@
     background-image: url('/assets/img/BG7.svg');
     background-color: #181A28;
     @include BG;
-    overflow-x: hidden;
+
+    @media(max-width: 1344px) {
+        background-image: url('/assets/img/BG4960.svg');
+    }
+
+    @media(max-width: 959px) {
+        background-image: url('/assets/img/BG4640.svg');
+    }
+
+    @media(max-width: 639px) {
+        background-image: url('/assets/img/BG4360.svg');
+    }
 }
 
 .BG8 {
     background-image: url('/assets/img/BG8.svg');
     background-color: #00010F;
     @include BG;
+
+    @media(max-width: 1344px) {
+        background-image: url('/assets/img/BG9960.svg');
+    }
+
+    @media(max-width: 959px) {
+        background-image: url('/assets/img/BG9640.svg');
+    }
+
+    @media(max-width: 639px) {
+        background-image: url('/assets/img/BG9360.svg');
+    }
 }
 
 .BG9 {
     background-image: url('/assets/img/BG9.png');
     background-color: #131523;
     @include BG;
+
+    @media(max-width: 1344px) {
+        background-image: url('/assets/img/BG5960.svg');
+    }
+
+    @media(max-width: 959px) {
+        background-image: url('/assets/img/BG5640.svg');
+    }
+
+    @media(max-width: 639px) {
+        background-image: url('/assets/img/BG5360.svg');
+    }
 }
 
 .BG10 {
-    background-image: url('/assets/img/BG10.png');
+    background-image: url('/assets/img/BG71920.png');
     background-color: #090B19;
     @include BG;
     overflow: hidden;
+
+    @media(max-width: 1344px) {
+        background-image: url('/assets/img/BG7960.png');
+    }
+
+    @media(max-width: 959px) {
+        background-image: url('/assets/img/BG7640.png');
+    }
+
+    @media(max-width: 639px) {
+        background-image: url('/assets/img/BG7360.png');
+    }
 }
 
 .BG11 {
     background-image: url('/assets/img/BG11.svg');
     background-color: #00010F;
     @include BG;
+
+    @media(max-width: 1344px) {
+        background-image: url('/assets/img/BG10960.svg');
+    }
+
+    @media(max-width: 959px) {
+        background-image: url('/assets/img/BG10460.svg');
+    }
+
+    @media(max-width: 639px) {
+        background-image: url('/assets/img/BG10360.svg');
+    }
 }
 
 .BG12 {
     background-image: url('/assets/img/BG12.svg');
     background-color: #0e101e;
     @include BG;
+
+    @media(max-width: 1344px) {
+        background-image: url('/assets/img/BG6960.svg');
+    }
+
+    @media(max-width: 959px) {
+        background-image: url('/assets/img/BG6640.svg');
+    }
+
+    @media(max-width: 639px) {
+        background-image: url('/assets/img/BG6360.svg');
+    }
 }

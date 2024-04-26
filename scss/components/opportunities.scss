@@ -1,17 +1,46 @@
 .opportunities {
 
     @media(max-width: 1344px) {
-        overflow-x: visible;
-      }
+        overflow-x: hidden;
+        padding-top: 50px;
+    }
+
+    @media(max-width: 959px) {
+        padding-top: 70px;
+    }
+
+    @media(max-width: 639px) {
+        padding-top: 80px;
+    }
 
     padding: 162px 0 273px;
 
     &__list {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-columns: 275px 275px 275px 275px;
         gap: 35px;
-        width: 1305px;
+        width: 100%;
         overflow-x: auto;
+        scrollbar-width: none;
+        -ms-overflow-style: none;
+        scrollbar-width: none;
+
+        @media(max-width: 1344px) {
+            gap: 25px;
+        }
+
+        @media(max-width: 959px) {
+            gap: 15px;
+        }
+
+        @media(max-width: 639px) {
+            gap: 25px;
+        }
+
+        &::-webkit-scrollbar {
+            width: 0;
+            height: 0;
+        }
     }
 
     &__subtitle {
@@ -23,6 +52,10 @@
         line-height: 150%;
         /* 27px */
         margin-bottom: 20px;
+
+        @media(max-width: 639px) {
+            margin-bottom: 15px;
+        }
     }
 
     &__text {
@@ -99,6 +132,21 @@
 
     &__title {
         margin-bottom: 35px;
+        
+        br {
+            display: none;
+        }
+
+        @media(max-width: 1344px) {
+            margin-bottom: 25px;
+
+            br {
+                display: block;
+            }
+        }
+
+        
+
     }
 
     &__arrow {
@@ -108,7 +156,7 @@
         position: absolute;
         cursor: pointer;
         transition: opacity 0.3s;
-        
+
         top: calc(50% - 34px / 2);
 
         &--next {
